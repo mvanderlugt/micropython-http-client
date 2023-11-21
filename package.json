@@ -1,9 +1,10 @@
 {
   "version": "0.1.0",
   "urls": [
-    ["lib_template/__init__.py", "github:mvanderlugt/micropython-lib-template/__init__.py"],
-    ["lib_template/hello.py", "github:mvanderlugt/micropython-lib-template/hello.py"]
+    ["http_client/http_status.py", "github:mvanderlugt/micropython-http-client/http_client/http_status.py"],
+    ["http_client/http_response.py", "github:mvanderlugt/micropython-http-client/http_client/http_response.py"],
+    ["http_client/http_client.py", "github:mvanderlugt/micropython-http-client/http_client/http_client.py"],
+    ["http_client/__init__.py", "github:mvanderlugt/micropython-http-client/http_client/__init__.py"]
   ],
   "deps": []
 }
-
