@@ -14,21 +14,21 @@ class HttpClient:
         self.ssl = ssl
         # todo connection pool?
 
-    async def get(self, path: str, parameters: dict = None, headers: dict = None, body: bytes = None) -> HttpResponse:
+    async def get(self, path: str, parameters: dict = None, headers: dict = None, body: bytes = b'') -> HttpResponse:
         if parameters is None:
             parameters = {}
         if headers is None:
             headers = {}
         return await self.__execute_request("GET", path, parameters, headers, body)
 
-    async def post(self, path: str, parameters: dict = None, headers: dict = None, body: bytes = None):
+    async def post(self, path: str, parameters: dict = None, headers: dict = None, body: bytes = b''):
         if parameters is None:
             parameters = {}
         if headers is None:
             headers = {}
         return await self.__execute_request("POST", path, parameters, headers, body)
 
-    async def put(self, path: str, parameters: dict = None, headers: dict = None, body: bytes = None):
+    async def put(self, path: str, parameters: dict = None, headers: dict = None, body: bytes = b''):
         if parameters is None:
             parameters = {}
         if headers is None:
